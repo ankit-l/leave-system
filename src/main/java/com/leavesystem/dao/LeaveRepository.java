@@ -13,7 +13,7 @@ import com.leavesystem.model.EmpLeaveRequest;
 
 @Repository
 public interface LeaveRepository extends CrudRepository<EmpLeaveRequest, String>{
-	
+	//@AllowFiltering
 	//@AllowFiltering
 	@Query("select * from leave_type  WHERE status =:status  ALLOW FILTERING")
 	public List<LeaveTypeDto> getAllLeaveType(@Param("status")String status);
