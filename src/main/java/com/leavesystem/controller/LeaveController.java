@@ -20,7 +20,7 @@ import com.leavesystem.service.LeaveService;
 
 /**
  * @author Ankit
- *
+ * this is rest con troller for leave system
  */
 @RestController
 @RequestMapping("/leave")
